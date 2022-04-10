@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <title>register</title>
+    <form action="{{ url_for('sign_up') }}" method="POST" enctype="multipart/form-data">
+        <label for="username">username</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">password</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="confirm_password">confirm password</label><br>
+        <input type="text" id="confirm_password" name="confirm_password"><br>
+
+
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <title>Sign in</title>
+
+    <form action="{{ url_for('login') }}" method="POST">
+        <label for="username">username</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">password</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <input type="submit" value="submit">
+        <p>{{poruka}}</p>
+
+    </form>
+</body>
+
+</html>
